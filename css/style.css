@@ -10,5 +10,19 @@
 body {
     font-family: 'Fira Code', monospace;
     background-color: var(--background-color);
+    height: 100%;
+    width: 100%;
+    font-weight: 800;
+}
 
+.advice-card {
+    background-color: var(--advice-card-color);
+}
+
+.advice-title {
+    color: var(--text-color);
+}
+
+.advice-text {
+    color: white;
 }
