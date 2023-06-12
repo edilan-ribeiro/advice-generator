@@ -6,3 +6,9 @@
     --advice-card-color: hsl(217, 19%, 24%);
     --background-color: hsl(218, 23%, 16%);
 }
+
+body {
+    font-family: 'Fira Code', monospace;
+    background-color: var(--background-color);
+
+}
