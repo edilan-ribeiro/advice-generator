@@ -15,12 +15,24 @@ body {
     font-weight: 800;
 }
 
+.container {
+    display: flex;
+    height: 500;
+    width: 350;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
 .advice-card {
     background-color: var(--advice-card-color);
+    padding: 10px;
+    border-radius: 15px;
 }
 
 .advice-title {
     color: var(--text-color);
+    font-size: 0.85em;
 }
 
 .advice-text {
