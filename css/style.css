@@ -7,17 +7,19 @@
   --background-color: hsl(218, 23%, 16%);
 }
 
+
+
 body {
   font-family: "Fira Code", monospace;
   background-color: var(--background-color);
-
   font-weight: 800;
+ 
 }
 
 main {
   display: flex;
   justify-content: center;
-
+  
 }
 
 .container {
@@ -25,7 +27,7 @@ main {
   flex-flow: column wrap;
   justify-content: center;
   align-items: center;
- 
+  height: 100vh;
   
 }
 
@@ -85,4 +87,17 @@ main {
 img.divider {
   width: 400px;
   margin-bottom: 15px;
+}
+
+@media (max-width: 500px) {
+  .container {
+    width: 80%;
+  }
+  .top-text {
+    width: fit-content;
+  }
+  img.divider {
+    width: 250px;
+    
+  }
 }
