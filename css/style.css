@@ -57,7 +57,10 @@ main {
   margin: 3%;
 }
 
-.dice-container {
+
+/* old dice */
+
+/* .dice-container {
   display: flex;
   flex-flow: row wrap;
   align-content: center;
@@ -73,6 +76,20 @@ main {
   align-items: center;
   justify-content: center;
   margin-top: -30px;
+} */
+
+.advice-update{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: none;
+  background-color: var(--advice-dice-color);
+  transform: translateY(-50%);
+}
+.advice-update:hover{
+  color: #53FFAB;
+  cursor: pointer;
+  box-shadow: 0 5px 15px var(--advice-dice-color);
 }
 
 img.divider {
