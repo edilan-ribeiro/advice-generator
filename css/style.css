@@ -1,40 +1,88 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap");
 
 :root {
-    --text-color: hsl(150, 100%, 66%);
-    --advice-dice-color: hsl(150, 100%, 66%);
-    --advice-card-color: hsl(217, 19%, 24%);
-    --background-color: hsl(218, 23%, 16%);
+  --text-color: hsl(150, 100%, 66%);
+  --advice-dice-color: hsl(150, 100%, 66%);
+  --advice-card-color: hsl(217, 19%, 24%);
+  --background-color: hsl(218, 23%, 16%);
 }
 
 body {
-    font-family: 'Fira Code', monospace;
-    background-color: var(--background-color);
-    height: 100%;
-    width: 100%;
-    font-weight: 800;
+  font-family: "Fira Code", monospace;
+  background-color: var(--background-color);
+
+  font-weight: 800;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+
 }
 
 .container {
-    display: flex;
-    height: 500;
-    width: 350;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row wrap;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+ 
+  
 }
+
+.top-text {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 500px;
+  width: 450px;
+}
+
+
 
 .advice-card {
-    background-color: var(--advice-card-color);
-    padding: 10px;
-    border-radius: 15px;
-}
+  display: flex;
+  background-color: var(--advice-card-color);
+  border-radius: 15px;
+  flex: 0;
+  height: 300px;
+  flex-flow: column wrap;  
+  justify-content: space-evenly;
+  }
 
 .advice-title {
-    color: var(--text-color);
-    font-size: 0.85em;
+  color: var(--text-color);
+  font-size: 0.85em;
+  text-align: center;
 }
 
 .advice-text {
-    color: white;
+  color: white;
+  text-align: center;
+  margin: 3%;
+}
+
+.dice-container {
+  display: flex;
+  flex-flow: row wrap;
+  align-content: center;
+  justify-content: center;
+  }
+
+
+
+.dice-border {
+  display: flex;
+  background: var(--advice-dice-color);
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+  align-items: center;
+  justify-content: center;
+  margin-top:-30px;
+}
+
+img.divider {
+  width: 400px;
+  margin-bottom: 15px;
 }
