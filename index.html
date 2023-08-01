@@ -4,8 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Advice Generator</title>
-    <link rel="stylesheet" href="./css/reset.css" />
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./src/css/reset.css" />
+    <link rel="stylesheet" href="./src/css/global.css" />
+    <link rel="stylesheet" href="./src/css/responsive.css" />
+    <link rel="stylesheet" href="./src/css/style.css" />
     <link rel="shortcut icon" href="./images/favicon-32x32.png" type="image/x-icon" />
 
   </head>
@@ -14,21 +16,22 @@
       <div class="container">
         
         <div class="advice-card">
-          <div class="top-text">
-            <h2 class="advice-title">Advice #117</h2>
-            <p class="advice-text">
-              "It is easy to sit up and take notice, what's difficult is getting
-              up and taking action."
+          <div class="text-container">
+            <h2 class="advice-title" id="advice-ID"></h2>
+            <p class="advice-text" id="advice-text">
+              Click on the dice below to generate your advice!
             </p>
-            <img class="divider" src="./images/pattern-divider-desktop.svg" alt="simple divider"/>
+            <img class="divider" src="./src/images/pattern-divider-desktop.svg" alt="simple divider"/>
           </div>
         </div>
 
-        <button class="advice-update">
-          <img src="./images/icon-dice.svg" alt="Dice icon" />
+        <button class="advice-update-btn" id="advice-button">
+          <img src="./src/images/icon-dice.svg" alt="Dice button" id="img-Button"/>
         </button>
 
       </div>
     </main>
+
+    <script src="./src/js/advice.js"></script>
   </body>
 </html>
