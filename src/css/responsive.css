@@ -1,0 +1,35 @@
+@media (max-width: 500px) {
+  .container {
+    max-width: 100%;
+  }
+  
+  .container .advice-card {
+    max-width: 70%;
+    height: 300px !important; 
+  }
+
+  .container .advice-card .text-container {
+    transform: scale(0.9);
+    max-width: 100%;
+   
+  }
+  
+
+  .container .advice-card .text-container .advice-text {
+    flex-wrap: wrap;
+    max-width: fit-content;
+  }
+
+
+  .container .advice-card .text-container img.divider {
+      max-width: 300px;
+    } 
+  }
+
+
+  @media (max-width: 420px) {
+
+    .container .advice-card .text-container img.divider {
+      max-width: 250px;
+    } 
+  }
